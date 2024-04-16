@@ -1,0 +1,153 @@
+		body{
+			background-color: #2e4057;
+		}
+		#title{
+				width:auto;
+				display: grid;
+ 				height: 50px;
+ 				grid-template-columns: 1fr 1fr 1fr 1fr;
+ 				grid-column-gap: 10px;
+ 				}
+ 		hr{ border: 3px solid black; }
+		#line{
+			width:500px;
+			
+		}
+		#head{
+				margin:0;
+				text-align: center;
+ 				color: white;
+ 				border: 1px solid black;
+ 				line-height: 100px;
+ 				background-color: #4e6b8f;
+ 				font-size: 50px;}
+		nav {
+			background-color: #4e6b8f;
+			overflow: hidden;
+		}
+    
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			}
+    
+		nav li {
+			float: left;
+    }
+    
+		nav li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			}
+    
+		nav li a:hover {
+			background-color: #000000;
+    }
+		h4{
+			text-align:left;
+			font-size: 12px;
+			padding-bottom:0px;
+		}
+		input{
+		padding-top:0px;
+		height:35px;}
+		#sumary{
+			height: 100px;
+		}
+		#leftSide{
+			width: 50%;
+			background-color: ;
+		}
+		#fullName{
+			font-size: 50;
+			display: flex;
+			justify-content: center;
+			text-indent: 10px;
+		}
+		#contact{
+			font-size: 75%;
+			display: flex;
+			justify-content: center:
+			font-weight: normal;
+			text-indent:20px;
+		}
+		#previousCV{
+			margin-left:auto;
+			margin-right:auto;
+			width: 600px;
+			border: 1px solid black;
+			border-spacing: 0px;
+			border-collapse: collapse;
+		}	
+		#headerCV{
+			border: 1px solid black;
+			background-color:  #B0C4DE;
+			color: white;
+			text-align: center;
+			width: auto;
+			padding-bottom: 0px;
+		}
+		#school1,#school2,#school3{
+			display: flex;
+			justify-content: left;
+			text-indent: 7px;
+		}
+	#left{
+			background-color:#B0C4DE;
+			text-align: justify;
+			width: 100px;
+		}
+		#sumaryOutput {
+  white-space: pre-wrap;
+}
+
+		#right{
+			background-color: white;
+			border-bottom: 1px solid black;
+			text-align:left;
+			width: 470px;
+		}
+		#jobinline{
+			display: flex;
+			justify-content:left;
+			text-indent: 10px;
+			}
+		#jobinline2{
+			display: flex;
+			justify-content: left;
+			text-indent: 10px;
+			}
+		#sumaryOutput{
+			text-align: justify;
+			font-weight: normal;S
+		}
+		#leftTable{
+			width: 50%;
+		}
+		#mainTable{
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		#skill {
+		text-align: left;
+		border: 1px solid black;
+		width: auto;
+		}
+		#saveCV{
+			margin-left: 300px;
+		}
+		.container {
+  display: flex;
+}
+	#right1{
+		background-color:white;
+		height: auto;
+		font-weight: normal;
+		text-align: left;
+		
+	}

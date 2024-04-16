@@ -1,0 +1,200 @@
+<<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Fill in your CV</title>
+	<script src="JS/newsite.js"></script>
+	<link href="CSS/newsite.css" rel="stylesheet">
+</head>
+<body>
+	<h1 id="head">CV Generator</h1>
+	<nav>
+	<ul id="title">
+		<li id="line"><a href="PhatTanNguyen.html">CV Example 1</a></li>
+		<li id="line"><a href="FawasCV.html" >CV Example 2</a></li>
+		<li id="line"><a href="BaoNguyen.html">CV Example 3</a></li>
+		<li id="line"><a href="newsite.html">Make your CV</a></li>
+	</ul>
+	</nav>
+	<hr>
+	<table id="mainTable">
+		<th id="leftTable">
+			<h1>Let's start your CV by fill your information</h1>
+			<table>
+				<tr>
+					<th>
+						<h4>FIRST NAME</h4>
+						<p><input type="text" id="firstName" oninput="FIRSTNAME()" required="required" placeholder="e.g Jackson"></p>
+					</th>
+					<th>
+						<h4>LAST NAME</h4>
+						<p><input type="text" id="lastName" required="required" oninput="LASTNAME()" placeholder="e.g Nguyen"></p>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<h4>ADDRESS</h4>
+						<p><input type="text" id="address" required="required" oninput="ADDRESS()" placeholder="e.g 140 Rahylin Glebe.."></p>
+					</th>
+					<th>
+						<h4>POSTAL CODE</h4>
+						<p><input type="text" id="postalCode" required="required" oninput="POSTALCODE()" placeholder="e.g H91.."></p>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<h4>PHONE</h4>
+						<p><input type="text" id="phoneNum" required="required" oninput="PHONENUM()" placeholder="+353 897451315"></p>
+					</th>
+					<th>
+						<h4>EMAIL ADDRESS</h4>
+						<p><input type="text" id="emailAddress" required="required" oninput="EMAILADDRESS()"  placeholder="e.g G00425232@"></p>
+					</th>
+				</tr>
+				<tr>
+					<th colspan="2">
+						<h4>SUMARY</h4>
+						<p><textarea rows="4" cols="55" id="sumary" required="required" oninput="SUMARY()" size ="50"  placeholder="Something about yourself"></textarea></p>
+					</th>
+				</tr>
+				<tr>
+				</tr>
+				<tr>
+					<th>
+						<h4>JOB TITLE</h4>
+						<p><input type="text" id="jobTitle" required="required" oninput="JOBTITLE()" placeholder="e.g Coffee Barista"></p>
+					</th>
+					<th>
+						<h4>EMPLOYER</h4>
+						<p><input type="text" id="employer" required="required" oninput="EMPLOYER()" placeholder="e.g Mocha Beans"></p>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<h4>CITY</h4>
+						<p><input type="text" id="city" required="required" oninput="CITY()" placeholder="e.g Galway"></p>
+					</th>
+					<th>
+						<h4>COUNTRY</h4>
+						<p><input type="text" id="country" required="required" oninput="COUNTRY()"  placeholder="e.g Ireland"></p>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<h4>START DATE</h4>
+						<p><input type="date" id="startDate" oninput="STARTDATE()" required="required"></p>
+					</th>
+					<th>
+						<h4>END DATE</h4>
+						<p><input type="date" id="endDate" oninput="ENDDATE()" required="required"></p>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<h4>SCHOOL NAME</h4>
+						<p><input type="text" id="schoolNAME" required="required" oninput="SCHOOLNAME()"  placeholder="e.g ATU"></p>
+					</th>
+					<th>
+						<h4>SCHOOL LOCATION</h4>
+						<p><input type="text" id="schoolLocation" required="required" oninput="SCHOOLLOCATION()" placeholder="e.g Galway"></p>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<h4>FIELD OF STUDY</h4>
+						<p><input type="text" id="fieldOfStudy" required="required" oninput="FIELD()"  placeholder="e.g Bachelor in Computing...."></p>
+					</th>
+					<th>
+						<h4>QUALIFICATION</h4>
+						<p><input type="text" id="qualification" required="required" oninput="QUALIFICATION()" placeholder="Enter qualification"></p>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<h4>START DATE</h4>
+						<p><input type="month" id="monthStart" oninput="SCHOOLSTARTDATE()" required="required"></p>
+					</th>
+					<th>
+						<h4>GRADUATION DATE</h4>
+						<p><input type="month" id="monthEnd" oninput="GRADUATE()" required="required"></p>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<h4>GRADE(OPTIONAL)</h4>
+						<p><input type="text" id="grade" oninput="GRADE()" placeholder="5.0"></p>
+					</th>
+					<th>
+						<h4>HONOURS(OPTIONAL)</h4>
+						<p><input type="text" id="honour" oninput="HONOURS()" placeholder="e.g Merit, Distinction, Honour"></p>
+					</th>
+				</tr>
+				<tr>
+					<th colspan="2">
+							  <label for="skill-input">Skills:</label>
+								<input type="text" id="skill-input">
+								<button id="add-skill-btn" onclick="addSkill()" >Add Skill</button>
+					</th>
+					<th>
+					</th>
+				</tr>
+		</tr>
+			</table>
+		</th>
+		<th id="leftSide">
+			<button id="saveCV"><a href="userFinalCv.html" >Save CV</a></button>
+			<div id="headerCV">
+				<h1 id ="fullName"><p id="firstNameOutput"></p><p id="lastNameOutput"> &nbsp; </p></h1>
+			<h4 id="contact"><p id="phoneNumOutput"></p><p id="emailOutput"></p><p id="addressOutput"></p><p id="postcode"></p></h4>
+			</div>
+		<br>
+		<table id="previousCV">
+			<tr>
+				<th id="left" ><h3>Sumary</h3></th>
+				<th id="right"></th>
+			</tr>
+			<tr>
+				<th id="left"></th>
+				<th id="right"><div id="sumaryOutput"></div></th>
+			</tr>
+			<tr>
+				<th id="left" ><h3>Work Experience</h3></th>
+				<th id="right"></th>
+			</tr>
+			<tr>
+				<th id="left"></th>
+				<th id="right">
+					<h4 id="jobinline"><p id="jobsTitleOutput"></p><p id="employerOutput"></p></h4>
+					<h4 id="jobinline2"><p id="cityOutput"></p><p id="countryOutput"></p><p id="startDateOutput"></p><p id="endDateOutput"></p></h4>
+				</th>
+			</tr>
+			<tr>
+				<th id="left" ><h3>Education</h3></th>
+				<th id="right"></th>
+			</tr>
+			<tr>
+				<th id="left" ></th>
+				<th id="right">
+					<h4 id="school1"><p id="schoolNameOutput"></p><p id="schoolCountryOutput"></p></h4>
+					<h4 id="school2" ><p id="schoolStartDateOutput"></p><p id="schoolEndDateOutput"></p></h4>
+					<p id="fieldOutput"></p>
+					<p id="qualificationOutput"></p>
+					<h4 id="school3" ><p id="gradeOutput"></p><p id="honourOutput"></p></h4>
+				</th>
+			</tr>
+			<tr>
+				<th id="left" ><h3>Skill</h3>
+				<th id="right"></th>
+			</tr>
+			<tr>
+				<th id="left"></th>
+				<th id="right1">
+					<ul id="skill-list"></ul>
+				</th>
+			</tr>
+		</table>
+			
+		</th>
+	</table>
+</body>
+</html>

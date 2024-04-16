@@ -1,0 +1,147 @@
+/* Apply the spinning color effect to the body element */
+body {
+  background-color: #c4c4c4;
+  animation: colorchange 10s infinite;
+}
+
+
+@keyframes colorchange {
+  0% {
+    background-color: #c4c4c4;
+  }
+  50% {
+    background-color: #336699;
+  }
+  100% {
+    background-color: #c4c4c4;
+  }
+}
+
+#title {
+  width: auto;
+  display: grid;
+  height: 50px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+}
+
+hr {
+  border: 3px solid black;
+}
+
+#line {
+  width: 500px;
+}
+
+#head {
+  margin: 0;
+  text-align: center;
+  color: white;
+  border: 1px solid black;
+  line-height: 100px;
+  background-color: #4e6b8f;
+  font-size: 50px;
+}
+
+nav {
+  background-color: #4e6b8f;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #000000;
+}
+
+#headerCV {
+  height: 200px;
+  width: 500px;
+  background-color: #336699;
+}
+
+#fullname,
+#contactCV {
+  display: flex;
+  justify-content: center;
+  text-indent: 10px;
+  line-height: 0.1;
+}
+
+#fullname {
+  font-size: 200%;
+  color: white;
+}
+
+#contactCV {
+  font-size: 100%;
+  color: white;
+}
+
+table {
+  height: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  border: 1px solid black;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+#sumaryOutputCV{
+	white-space: pre-wrap;
+	
+}
+#left {
+  background-color: #336699 ;
+  text-align: justify;
+  width: 100px;
+}
+
+#right {
+  
+  background-color: white;
+  border-bottom: 1px solid black;
+  text-align: left;
+  width: 470px;
+}
+
+#jobinlineCV,
+#jobinlineCV2,
+#school1,
+#school2,
+#school3 {
+  display: flex;
+  text-indent: 10px;
+}
+
+#buttonback {
+  margin-left: 600px;
+}
+
+#right1 {
+  background-color: white;
+  height: auto;
+  font-weight: normal;
+  text-align: left;
+}
+/*The spinning color effect is achieved using CSS animations. Specifically, the CSS @keyframes rule is used to define a set of styles that will be gradually applied to an element over time. In this case, the animation is called "colorchange" and set to repeat infinitely with a duration of 10 seconds.
+
+The keyframes rule is used to define three different styles that will be applied at different points during the animation. At the start of the animation (0%), the background color of the element is set to #c4c4c4. Halfway through the animation (50%), the background color is changed to #336699. And at the end of the animation (100%), the background color returns to #c4c4c4.
+
+The combination of these styles applied gradually over time creates a smooth transition between the different colors, resulting in the spinning color effect. The background-color property is applied to the body element, so the spinning color effect will be applied to the entire background of the webpage*/

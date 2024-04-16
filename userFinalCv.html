@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Your CV</title>
+	<script src="JS/userFinalCV.js"></script>
+	<link href="CSS/userFinalCV.css" rel="stylesheet">
+</head>
+<body>
+	<h1 id="head">CV Generator</h1>
+	<nav>
+	<ul id="title">
+		<li id="line"><a href="PhatTanNguyen.html">CV Example 1</a></li>
+		<li id="line"><a href="FawasCV.html" >CV Example 2</a></li>
+		<li id="line"><a href="BaoNguyen.html">CV Example 3</a></li>
+		<li id="line"><a href="newsite.html">Make your CV</a></li>
+	</ul>
+	</nav>
+	<hr>
+<table>
+	<tr>
+	<th colspan="2" id="headerCV">
+		<h4 id="fullname">
+			<p id="firstNameCV"></p>
+			<p id="lastNameCv"></p>
+		</h4>
+		<h4 id="contactCV">
+			<p id="phoneCV"></p>
+			<p id="emailCV"></p>
+			<p id="addressCV"></p>
+			<p id="postalCV"></p>
+		</h4>
+	
+	</th>
+	<tr>
+	<tr>
+		<th id="left">Sumary</th>
+		<th id="right"></th>
+	</tr>
+	<tr>
+		<th id="left"></th>
+		<th id="right"><div id="sumaryOutputCV"></div></th>
+	</tr>
+	<tr>
+		<th id="left">Work Experience</th>
+		<th id="right"></th>
+	</tr>
+	<tr>
+		<th id="left"></th>
+		<th id="right">
+			<div id="jobinlineCV"><p id="jobsTitleOutputCV"></p><p id="employerOutputCV"></p></div>
+			<div id="jobinlineCV2"><p id="cityOutputCV"></p><p id="countryOutputCV"></p><p id="startDateOutputCV"></p><p id="endDateOutputCV"></p></div>
+		</th>
+	</tr>
+	<tr>
+		<th id="left">Education</th>
+		<th id="right"></th>
+	</tr>
+	<tr>
+		<th id="left"></th>
+		<th id="right">
+		<div id="school1"><p id="schoolNameOutputCV"></p><p id="schoolCountryOutputCV"></p></div>
+		<div id="school2" ><p id="schoolStartDateOutputCV"></p><p id="schoolEndDateOutputCV"></p></div>
+		<p id="fieldOutputCV"></p>
+		<p id="qualificationOutputCV"></p>
+		<div id="school3" ><p id="gradeOutputCV"></p><p id="honourOutputCV"></p></div>
+		</th>
+	</tr>
+	<tr>
+		<th id="left">Skill</th>
+		<th id="right"></th>
+	</tr>
+	<tr>
+		<th id="left"></th>
+		<th id="right1">
+			<ul id="skill-list"></ul>
+		</th>
+	</tr>
+</table>
+	<button id="buttonback" onclick="again()"><a href="newsite.html"> Make another CV?</a></button>
+</body>
+</html>
